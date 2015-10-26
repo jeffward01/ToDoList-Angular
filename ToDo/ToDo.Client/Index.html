@@ -8,10 +8,16 @@
 
     <input type="text" ng-model="newToDo" />
 
+    <button ng-click="AddToDo()">Add</button>
+
+
     <ul>
-        <li></li>
+        <li ng-repeat="todo in todos">{{todo}}</li>
     </ul>
 
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/ToDo.ctrl.js"></script>
 
 
 </body>
